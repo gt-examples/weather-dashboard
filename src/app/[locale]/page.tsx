@@ -180,7 +180,7 @@ export default async function Home() {
                 <T>Humidity</T>
               </p>
               <p className="text-lg text-neutral-200">
-                <Num>{currentHumidity}</Num>%
+                <Num options={{ style: "unit", unit: "percent" }}>{currentHumidity}</Num>
               </p>
             </div>
             <div className="border border-neutral-800 rounded-md p-3">
@@ -237,7 +237,7 @@ export default async function Home() {
                   </span>
                 </div>
                 <div className="text-xs text-neutral-500 w-16 text-right">
-                  <Num>{day.humidity}</Num>%
+                  <Num options={{ style: "unit", unit: "percent" }}>{day.humidity}</Num>
                 </div>
               </div>
             ))}
