@@ -66,13 +66,15 @@ function getWeatherIcon(condition: Condition) {
   }
 }
 
-const conditionLabels: Record<Condition, string> = {
-  sunny: "Sunny",
-  cloudy: "Cloudy",
-  rainy: "Rainy",
-  snowy: "Snowy",
-  stormy: "Stormy",
-};
+function getConditionLabel(gt: (s: string) => string, condition: Condition): string {
+  switch (condition) {
+    case "sunny": return gt("Sunny");
+    case "cloudy": return gt("Cloudy");
+    case "rainy": return gt("Rainy");
+    case "snowy": return gt("Snowy");
+    case "stormy": return gt("Stormy");
+  }
+}
 
 // Static mock data
 const currentTemp = 22;
@@ -168,7 +170,7 @@ export default async function Home() {
             </div>
             <div className="text-neutral-400">
               {getWeatherIcon(currentCondition)}
-              <p className="text-sm text-center mt-1">{gt(conditionLabels[currentCondition])}</p>
+              <p className="text-sm text-center mt-1">{getConditionLabel(gt, currentCondition)}</p>
             </div>
           </div>
 
@@ -224,7 +226,7 @@ export default async function Home() {
                 </div>
                 <div className="text-neutral-400 flex items-center gap-2 w-28">
                   <span className="scale-75 origin-left">{getWeatherIcon(day.condition)}</span>
-                  <span className="text-xs text-neutral-500">{gt(conditionLabels[day.condition])}</span>
+                  <span className="text-xs text-neutral-500">{getConditionLabel(gt, day.condition)}</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <span className="text-neutral-200">

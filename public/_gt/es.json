@@ -2,8 +2,11 @@
   "0e76ef4c5fd14d8e": "San Francisco, CA",
   "0ea944d2d937d2cc": "km/h",
   "15a2f2dee01d5c8d": "Viento",
+  "26777b0008f92f90": "Nublado",
+  "3a1a7a3cf42eaf19": "Tormenta",
   "4d8cca5c503d36a6": "hPa",
   "598d58ecbc696682": "Índice UV",
+  "5b3216e0778762b8": "Lluvioso",
   "6b6cb79c7064b74d": "Acerca de esta demo",
   "770440dbbb8d7162": [
     "Sensación térmica de ",
@@ -14,7 +17,9 @@
     },
     "°C"
   ],
-  "a59abb4449d97a01": "Este panel meteorológico demuestra el formato de números y fechas adaptado a la configuración regional con gt-next. Las temperaturas, los porcentajes y las fechas se adaptan automáticamente al idioma y la región seleccionados. El componente Num da formato a los números según las convenciones regionales, mientras que DateTime gestiona la localización de fechas.",
+  "8a134a548a5305bb": "Con nieve",
+  "a496dc4d32d82d35": "Soleado",
+  "a59abb4449d97a01": "Este panel meteorológico demuestra el formato de números y fechas adaptado a la configuración regional con gt-next. Todas las temperaturas, porcentajes y fechas se adaptan automáticamente al idioma y la región seleccionados. El componente Num da formato a los números según las convenciones regionales, mientras que DateTime gestiona la localización de fechas.",
   "bc45307b5d21bf27": "Presión",
   "c3fb2e77e039deb6": "Humedad",
   "ebc8cc4fda3f6bd9": "Datos meteorológicos adaptados al idioma local con temperaturas, fechas y medidas formateadas. Cambia de idioma para ver cómo los números y las fechas se adaptan a cada configuración regional.",
