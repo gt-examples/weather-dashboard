@@ -1,13 +1,29 @@
 {
+  "0c730b7f189776b6": "Voir sur GitHub",
   "0e76ef4c5fd14d8e": "San Francisco, CA",
-  "0ea944d2d937d2cc": "km/h",
   "15a2f2dee01d5c8d": "Vent",
+  "15e041819a9f8636": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " km/h"
+  ],
+  "23e306412459bcd0": "Tableau de bord météo",
   "26777b0008f92f90": "Nuageux",
   "3a1a7a3cf42eaf19": "Orageux",
-  "4d8cca5c503d36a6": "hPa",
   "598d58ecbc696682": "Indice UV",
   "5b3216e0778762b8": "Pluvieux",
   "6b6cb79c7064b74d": "À propos de cette démo",
+  "6ed5d4154c630938": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " hPa"
+  ],
   "770440dbbb8d7162": [
     "Ressenti ",
     {
@@ -22,7 +38,16 @@
   "a59abb4449d97a01": "Ce tableau de bord météo illustre le formatage des nombres et des dates selon la locale avec gt-next. Les températures, les pourcentages et les dates s'adaptent automatiquement à la langue et à la région sélectionnées. Le composant Num formate les nombres selon les conventions locales, tandis que DateTime gère la localisation des dates.",
   "bc45307b5d21bf27": "Pression",
   "c3fb2e77e039deb6": "Humidité",
-  "ebc8cc4fda3f6bd9": "Données météorologiques adaptées aux paramètres régionaux avec températures, dates et mesures formatées. Changez de langue pour voir comment les nombres et les dates s'adaptent à chaque locale.",
+  "ebc8cc4fda3f6bd9": "Données météo adaptées aux paramètres régionaux avec températures, dates et mesures formatées. Changez de langue pour voir comment les nombres et les dates s'adaptent à chaque locale.",
+  "ebcdb58cd149d1dd": [
+    "Cette application est un exemple construit avec ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    " pour illustrer le formatage multilingue. Il ne s'agit pas d'un vrai service météo."
+  ],
   "ed9291ad66ea9fd5": "Conditions actuelles",
   "f48c06d9e4cd69d6": "Prévisions sur 7 jours"
 }

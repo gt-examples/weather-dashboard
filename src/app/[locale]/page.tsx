@@ -101,6 +101,24 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-neutral-950 font-sans text-neutral-200">
+      {/* Example App Disclaimer */}
+      <div className="bg-blue-950/60 border-b border-blue-900/50">
+        <div className="max-w-3xl mx-auto px-6 py-2.5 text-center text-xs text-blue-300">
+          <T>
+            This is an example app built with{" "}
+            <a
+              href="https://generaltranslation.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-200"
+            >
+              General Translation
+            </a>{" "}
+            to demonstrate multilingual formatting. Not a real weather service.
+          </T>
+        </div>
+      </div>
+
       <header className="border-b border-neutral-800 bg-neutral-950">
         <div className="max-w-3xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -114,7 +132,7 @@ export default async function Home() {
             </a>
             <span className="text-neutral-700">/</span>
             <h1 className="text-sm font-semibold text-neutral-100">
-              Weather Dashboard
+              <T>Weather Dashboard</T>
             </h1>
           </div>
           <div className="flex items-center gap-3">
@@ -123,7 +141,7 @@ export default async function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-neutral-200 transition-colors"
-              aria-label="View on GitHub"
+              aria-label={gt("View on GitHub")}
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
@@ -188,7 +206,7 @@ export default async function Home() {
                 <T>Wind</T>
               </p>
               <p className="text-lg text-neutral-200">
-                <Num>{currentWind}</Num> <T>km/h</T>
+                <T><Num>{currentWind}</Num> km/h</T>
               </p>
             </div>
             <div className="border border-neutral-800 rounded-md p-3">
@@ -204,7 +222,7 @@ export default async function Home() {
                 <T>Pressure</T>
               </p>
               <p className="text-lg text-neutral-200">
-                <Num>{pressure}</Num> <T>hPa</T>
+                <T><Num>{pressure}</Num> hPa</T>
               </p>
             </div>
           </div>
@@ -249,7 +267,7 @@ export default async function Home() {
           <h3 className="text-lg font-semibold text-neutral-100 mb-3">
             <T>About this demo</T>
           </h3>
-          <p className="text-sm text-neutral-400 leading-relaxed max-w-xl">
+          <p className="text-sm text-neutral-400 leading-relaxed max-w-xl mb-4">
             <T>
               This weather dashboard demonstrates locale-aware number and date
               formatting with gt-next. All temperatures, percentages, and dates
@@ -258,6 +276,12 @@ export default async function Home() {
               DateTime handles date localization.
             </T>
           </p>
+          <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-neutral-500">
+            <a href="https://generaltranslation.com/docs/next" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-300 underline">gt-next docs</a>
+            <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-300 underline">Next.js</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-300 underline">Intl API</a>
+            <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-300 underline">Tailwind CSS</a>
+          </div>
         </div>
       </main>
     </div>
